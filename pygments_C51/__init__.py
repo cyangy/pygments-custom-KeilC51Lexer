@@ -6,7 +6,7 @@ class C51Lexer(CLexer):
     name = 'C51'
     aliases = ['c51']
 
-    EXTRA_KEYWORDS = ['_at_']
+    EXTRA_KEYWORDS = ['_at_','interrupt']
     EXTRA_TYPE = ['sbit', 'idata', 'xdata','code','bit','sfr']
     def get_tokens_unprocessed(self, text):
         for index, token, value in CLexer.get_tokens_unprocessed(self, text):
